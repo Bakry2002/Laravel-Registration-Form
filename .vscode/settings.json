@@ -1,0 +1,26 @@
+{
+    "cSpell.words": [
+        "laravel",
+        "مرحباً"
+    ],
+    "workbench.colorCustomizations": {
+        "activityBar.activeBackground": "#b49007",
+        "activityBar.background": "#b49007",
+        "activityBar.foreground": "#15202b",
+        "activityBar.inactiveForeground": "#15202b99",
+        "activityBarBadge.background": "#0af5c4",
+        "activityBarBadge.foreground": "#15202b",
+        "commandCenter.border": "#e7e7e799",
+        "sash.hoverBorder": "#b49007",
+        "statusBar.background": "#836905",
+        "statusBar.foreground": "#e7e7e7",
+        "statusBarItem.hoverBackground": "#b49007",
+        "statusBarItem.remoteBackground": "#836905",
+        "statusBarItem.remoteForeground": "#e7e7e7",
+        "titleBar.activeBackground": "#836905",
+        "titleBar.activeForeground": "#e7e7e7",
+        "titleBar.inactiveBackground": "#83690599",
+        "titleBar.inactiveForeground": "#e7e7e799"
+    },
+    "peacock.color": "#836905"
+}
