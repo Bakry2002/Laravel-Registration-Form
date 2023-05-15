@@ -154,7 +154,6 @@
 
         function showAlert(message) {
             alertContainer.innerHTML = `<span class="alert-border"></span><div class="alert alert-danger alert-white rounded" role="alert">
-    
     <div class="icon"><i class="fa fa-times-circle"></i></div>
     <strong>{{ __('create.error') }}</strong>
         ${message}

@@ -20,7 +20,7 @@ class SendNewUserRegisteredNotification implements ShouldQueue
     public function handle(NewUserRegistered $event)
     {
         $title = 'New registered user';
-        $content = "A new user {$event->student->Username} is registered to the system.";
+        $content = "A new user < {$event->student->Username} > is registered to the system.";
 
         Mail::to('abdaullah62@gmail.com')->send(new NewUserRegisteredEmail($title, $content));
     }

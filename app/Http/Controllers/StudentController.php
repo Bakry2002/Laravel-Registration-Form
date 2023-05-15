@@ -50,7 +50,7 @@ class StudentController extends Controller
         $student->Password = $request->password; // get the value of the input field with name="password"
 
         $student->save(); // save the student object to the database
-        event(new NewUserRegistered($student));
+        event(new NewUserRegistered($student)); // fire the event that send the email 
 
         return redirect()->route('students.index')->with('success', 'Student Added successfully.'); // redirect the user to the index page with a success message
     }
