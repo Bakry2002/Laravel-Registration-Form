@@ -2,8 +2,8 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #f5f5f5;
-    background-image: url('../public/hereBanner.jpg');
+    background-color: var(--coyote);
+    /* background-image: url('../public/hereBanner.jpg'); */
     height: 100%;
 }
 .alert-container {
@@ -29,18 +29,10 @@ body {
     --taupe-gray: hsla(330, 1%, 62%, 1);
     --white: hsla(0, 0%, 100%, 1);
 
-    /* CSS HSL */
-    --nyanza: hsla(88, 57%, 91%, 1);
-    --tea-green: hsla(87, 40%, 80%, 1);
-    --olivine: hsla(86, 30%, 70%, 1);
-    --olivine-2: hsla(84, 21%, 57%, 1);
-    --moss-green: hsla(82, 18%, 51%, 1);
-    --reseda-green: hsla(83, 21%, 42%, 1);
-    --dark-green: hsla(120, 38%, 12%, 1);
-    --hunter-green: hsla(113, 33%, 26%, 1);
-    --fern-green: hsla(92, 45%, 32%, 1);
-    --moss-green: hsla(78, 33%, 50%, 1);
-    --mindaro: hsla(65, 78%, 79%, 1);
+/* SCSS HSL */
+    --dark-slate-gray: hsla(176, 23%, 25%, 1);
+    --coyote: hsla(34, 16%, 43%, 1);
+    --beige: hsla(62, 34%, 82%, 1);
 
     --danger: #dc3545;
     --success: #28a745;
@@ -53,8 +45,9 @@ body {
 
 header {
     height: 80px;
-    background-color: var(--taupe-gray);
+    background-color: rgba(0,0,0,0.11);
     margin-bottom: 1rem;
+    
 }
 
 
@@ -123,7 +116,7 @@ form {
 }
 
 .nav-item > a {
-    color: var(--jet) !important;
+    color: var(--white) !important;
     font-size: 1.2rem !important;
 }
 
@@ -159,11 +152,11 @@ form {
 }
 
 #register {
-    background: linear-gradient(45deg, #00000070, #ffffff33);
+    background: linear-gradient(45deg, var(--coyote), var(--beige));
     padding: 3rem;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(5px);
     border-radius: 10px;
-    box-shadow: 1px 1px 6px -3px;
+    box-shadow: 3px 3px 6px -3px;
 }
 .field-wrapper {
     display: flex;
@@ -276,10 +269,10 @@ form {
 
 footer {
     padding: var(--sm-gutter);
-    background-color: var(--taupe-gray);
+    background-color: var(--coyote);
     position: fixed;
     bottom: 0;
-    height: 120px;
+    height: 100px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -301,7 +294,7 @@ footer > span {
 /* Modal Style */
 
 .modal-content {
-    background-color: var(--white) !important;
+    background-color: var(--beige) !important;
 }
 .modal-title {
     color: var(--jet) !important;
@@ -517,7 +510,7 @@ footer > span {
   }
 
 body {
-    background-image: url("./hereBanner.jpg");
+    background-image: url("./retrosupply-jLwVAUtLOAQ-unsplash.jpg");
     background-size: cover;
     background-position: inherit;
 }
@@ -558,7 +551,7 @@ body {
 
 
   .card {
-    background-color: var(--taupe-gray) !important;
+    background: linear-gradient(45deg, var(--coyote), var(--beige));
   }
 
   .card .cta-register {
@@ -587,7 +580,8 @@ body {
 }
 
 .modal .cta-actor {
-    background-color: var(--taupe-gray);
+    background-color: var(--dark-slate-gray);
+    color: var(--beige);
 }
 .cta-actor {
     width: 100px;
