@@ -182,6 +182,8 @@
                 document.addEventListener('submit', function() {
                     // Change the text of the button to "Registering..."
                     registerBtn.textContent = "{{ __('create.registering') }}";
+                    // dont allow user to click the button again
+                    registerBtn.disabled = true;
                 });
             }
         });
