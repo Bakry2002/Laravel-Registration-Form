@@ -10,8 +10,13 @@ use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\Mail;
 use Tests\TestCase;
+use Illuminate\Foundation\Testing\StudentControllerTest as BaseTestCase;
 
-class StudentControllerTest extends TestCase
+
+// to Run test : php artisan test --testsuite=Feature --filter=StudentControllerTest
+
+
+class StudentControllerTest extends ExampleTest
 {
     use RefreshDatabase;
 
